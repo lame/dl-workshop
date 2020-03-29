@@ -19,6 +19,7 @@ dependencies:
 - pyjanitor
 - tqdm
 - pip
+- nbstripout
 - pip:
   - jax
   - jaxlib
