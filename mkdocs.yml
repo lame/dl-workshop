@@ -1,0 +1,53 @@
+site_name: Deep Learning Fundamentals
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  icon:
+    logo: 'fontawesome/solid/book'
+  features:
+    - instant
+    - tabs
+  language: en
+
+# We customize the navigation by hand to control the order
+# in which pages show up.
+nav:
+- "Home": index.md
+- "Model, Loss, Optimizer": "tutorial-instructor.ipynb"
+
+plugins:
+  - search
+  - mknotebooks:
+      execute: false
+      write_markdown: true
+      allow_errors: true
+      timeout: 1200
+
+# Taken from here: https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+markdown_extensions:
+  - codehilite
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.attr_list
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+extra_css:
+  - css/nb_mods.css
+
+repo_name: 'ericmjl/dl-workshop'
+repo_url: 'https://github.com/ericmjl/dl-workshop'
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/ericmjl'
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/ericmjl'
+    - icon: 'fontawesome/brands/linkedin'
+      link: 'https://linkedin.com/in/ericmjl'

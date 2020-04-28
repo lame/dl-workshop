@@ -23,6 +23,7 @@ dependencies:
 - pip:
   - jax
   - jaxlib
-  - mkdocs-material
   - mkdocs
+  - mkdocs-material
+  - pymdown-extensions
   - mknotebooks
